@@ -1,10 +1,8 @@
 #!/usr/bin/python3
+
+
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        transpose = []
-        for elem in row:
-            elem = elem * elem
-            transpose.append(elem)
-            new_matrix.append(transpose)
-            return new_matrix
+    """
+    Compute the square value of all integers of a matrix
+    """
+    return ([[(x**2) for x in row] for row in matrix])
